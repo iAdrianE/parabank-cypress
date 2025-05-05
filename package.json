@@ -1,0 +1,25 @@
+{
+  "name": "parabank-cypress",
+  "version": "1.0.0",
+  "scripts": {
+"test:register": "npx cypress run --spec 'cypress/e2e/features/register.feature' --env reportName=register",
+"test:login": "npx cypress run --spec 'cypress/e2e/features/login.feature' --env reportName=login",
+"test:withdraw": "npx cypress run --spec 'cypress/e2e/features/withdraw.feature' --env reportName=withdraw",
+"test:transfer": "npx cypress run --spec 'cypress/e2e/features/transfer.feature' --env reportName=transfer",
+"test:all": "npm run test:register && npm run test:login && npm run test:withdraw && npm run test:transfer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^14.3.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "esbuild": "^0.25.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
