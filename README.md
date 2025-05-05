@@ -57,9 +57,9 @@ Al ejecutar las pruebas, se generarán reportes en formato HTML que incluyen det
 register_report_05042025_004957.html
 Se ejecuto una ultima vez el script de test:all para generar reportes de ejemplo antes de subir a github y crear un zip con el codigo de prueba. Tambien se dejaron el latestuser.json y accountid.json generados de esto.
 
+
 En el caso de que se requiera ver como se ejecutan los scripts con una interfaz visual se usa en la terminal de Windows el comando:
 - npx cypress open  
 Luego se elige E2ETesting y un navegador, de preferencia elegir microsoft edge.
 Una vez hecho esto aparecera la pantalla con las 4 features, tras darles clic, se ejecutaran los scripts correspondientes de manera visual.
-
-
+Es posible que al abrir las features por primera vez aparezcan vacias, esto se soluciona recargando.
